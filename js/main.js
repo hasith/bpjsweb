@@ -1,17 +1,20 @@
 
 $(document).ready(function() {
-  $('div.item').live('click', function(){
-		var selectedItem = $('div.itemSelected');
-		selectedItem.removeClass('itemSelected');
-		selectedItem.addClass('item');
+  $('div.item').on('click', function(){
+		var $selectedItem = $('div.itemSelected');
+		$selectedItem.removeClass('itemSelected');
+		$selectedItem.addClass('item');
 		this.className = 'itemSelected';
 	});  
+	
+	Accordion();
 });
 
 function Accordion() {
 	$('#accordion ul').hide(); // hide all unordered lists inside the accordion list
 	$('#accordion ul:first').show(); //show the first unordered list inside the accordion
-	$('#accordion li a').click(
+	
+	$('#accordion li a').on('click',
 		function() {
 			var checkElement = $(this).next();
 			if((checkElement.is('ul')) && (checkElement.is(':visible'))) { //if you click on an unordered list and this list is opened (visible)
@@ -33,4 +36,3 @@ function Accordion() {
 		}
 	);
 }
-$(document).ready(function() {Accordion();}); //when the document is ready to load the script it iniciates the function

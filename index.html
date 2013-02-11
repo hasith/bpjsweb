@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="description" content="Reference architecture for large scale JavaScript development. BoilerplateJS is a collection of product engineering patterns and some solid integrations of industry leading JavaScript libraries" />
-        <meta name="keywords" content="javascript reference architecture,large scale javascript, javascript product development, javascript boilerplate" />
-        <meta name="robots" content="all" />
-        <meta name="language" content="en-us" />
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <title>Boilerplate | JavaScript Reference Architecture</title>
-        <link rel="stylesheet" type="text/css" href="css/Desktop.css">
-        <link rel="stylesheet" type="text/css" href="css/Grids.Min.css">
-        <script language="javascript" src="js/jquery-1.7.2.min.js"></script>
-        <script language="javascript" src="js/main.js"></script>
-        <script type="text/javascript">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Reference architecture for large scale JavaScript development. BoilerplateJS is a collection of product engineering patterns and some solid integrations of industry leading JavaScript libraries" />
+		<meta name="keywords" content="javascript reference architecture,large scale javascript, javascript product development, javascript boilerplate" />
+		<meta name="robots" content="all" />
+		<meta name="language" content="en-us" />
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<title>Boilerplate | JavaScript Reference Architecture</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/grid.css">
+		<script language="javascript" src="js/vendor/jquery-1.9.1.min.js"></script>
+		<script language="javascript" src="js/main.js"></script>
+		<script type="text/javascript">
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-33996853-1']);
 			_gaq.push(['_setDomainName', 'boilerplatejs.org']);
@@ -28,465 +28,332 @@
 				var s = document.getElementsByTagName('script')[0];
 				s.parentNode.insertBefore(ga, s);
 			})();
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<div class="yui3-g-responsive">
+					<div class="yui3-u-1-3">
+						<div class="logo">
+							<img src="images/logo.jpg">
+						</div>
+					</div>
+					<div class="yui3-u-2-3 yui3-visible-desktop">
+						<a href="https://github.com/ectechno/boilerplatejs" class="github-link" target="_blank" onClick="_gaq.push(['_trackEvent', 'HomePage', 'AccessCode', 'Access Boilerplate Code']);">Fork us on GitHub</a>
+					</div>
+				</div>
+			</header>
+			<div class="content">
+				<div class="hero">
+					<h1><span><span>Boilerplate</span>JS</span> is a reference architecture<br/> for your next large scale JavaScript project.</h1>
+					<ul>
+						<li>Ready-to-use startup code with samples</li>
+						<li>Integrated industry leading JavaScript libraries</li>
+						<li>Patterns for complex JavaScript development</li>
+					</ul>
+					<p>
+						<a href="./samples/productsuite/index.html#sales" class="btn btn-primary" target="_blank" onClick="_gaq.push(['_trackEvent', 'HomePage', 'ViewExample', 'View Boilerplate Generic Example']);">View Live Examples</a><span class="yui3-visible-desktop"> or  </span><a href="https://github.com/ectechno/boilerplatejs" target="_blank" onClick="_gaq.push(['_trackEvent', 'HomePage', 'AccessCode', 'Access Boilerplate Code']);" class="btn">Download Latest</a>
+					</p>
+				</div>
+				<div class="yui3-g-responsive">
+					<div class="yui3-u-2-3">
+						<div class="leftPanel">
+							<h2>
+								What is BoilerplateJS?
+							</h2>
+							<p>
+								BoilerplateJS provides <span class="highlight">reference architecture</span> to take the pain out of <span class="highlight">large scale JavaScript</span> development. BoilerplateJS is a collection of <span class="highlight">product engineering patterns</span>, and some solid integrations of <span class="highlight">industry-leading JavaScript libraries</span>.
+							</p>
+							<p>
+								BoilerplateJS <span class="highlight">does not reinvent</span> processes for concerns such as MVC or Routing. It only defines architectural best practices and demonstrates sample code for complex JS development. <span class="highlight">Use your prefered libraries</span> if you do not like the libraries shipped by default.
+							</p>
+							<h2>
+								Should I use it?
+							</h2>
+							<p>
+								BoilerplateJS helps you avoid getting vendor locked. Remember, it's just placing your own code in the right architecture for integrating your favourite libraries.
+							</p>
+							<p>
+								With BoilerplateJS we address many of the critical concerns in large-scale JavaScript development. Have a look below. If these are important concerns to you, then we are a matching community!
+							</p>
 
-        </script>
-    </head>
-    <body>
-        <div class="header">
-            <div class="yui3-g">
-                <div class="yui3-u-1-3">
-                    <div class="logo"><img src="images/logo.jpg">
-                    </div>
-                </div>
-                <div class="yui3-u-2-3">
-                    <ul class="topMenu">
-                        <li>
-                            |<a href="https://github.com/ectechno/boilerplatejs" target="_blank" onClick="_gaq.push(['_trackEvent', 'HomePage', 'AccessCode', 'Access Boilerplate Code']);">FORK US ON github</a>
-                        </li>
-                        <li style="display:none">
-                            |<a href="#">VIEW documentaion</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="content">
-            <div class="yui3-g">
-                <div class="yui3-u-17-24">
-                    <div class="leftPanel">
-                        <div class="imageRoller"><img src="images/headerImg3.jpg">
-                        </div>
-                        <a href="./samples/productsuite/index.html#sales" target="_blank" onClick="_gaq.push(['_trackEvent', 'HomePage', 'ViewExample', 'View Boilerplate Generic Example']);"><div class="starButton"></div></a>
-                        <div class="actionButtons">
-                            <a href="./samples/productsuite/index.html#sales" target="_blank" onClick="_gaq.push(['_trackEvent', 'HomePage', 'ViewExample', 'View Boilerplate Generic Example']);"><img src="images/btnExample.png" alt="view live example"></a>
-                            <a href="https://github.com/ectechno/boilerplatejs" target="_blank" onClick="_gaq.push(['_trackEvent', 'HomePage', 'AccessCode', 'Access Boilerplate Code']);"><img src="images/btnDownload.png" alt="download the latest code"></a>
-                        </div>
-                        <div class="largeTitle">
-                            What is BoilerplateJS?
-                        </div>
-                        <div class="meduimText ">
-                            BoilerplateJS provides <span class="redColorText">reference architecture</span> to take
-                            the pain out of <span class="redColorText">large scale JavaScript</span> development. BoilerplateJS
-                            is a collection of <span class="redColorText">product engineering patterns</span>, and some solid
-                            integrations of <span class="redColorText">industry-leading JavaScript libraries.</span>.
-                            <br />
-                            <br />
-                            BoilerplateJS <span class="redColorText">does not reinvent</span> processes for concerns such as MVC or Routing. It only
-                            defines architectural best practices and demonstrates sample code for complex JS development.
-                            <span class="redColorText">Use your prefered libraries</span> if you do not like the libraries shipped by default.
-                            <br />
-                            <br />
-                        </div>
-                        <div class="largeTitle">
-                            Should I use it?
-                        </div>
-                        <div class="meduimText">
+							<ul id="accordion" class="panel">
+								<li class="itemSelectedHeader" >
+									<a href="#" class="clickHeader"> <div class="emp">Solution Structure</div> How should I organize my solution structure?</a>
+									<ul class="content">
+										<li>
+											<p><img class="floatLeft" src="./images/content/solution-structure.png" height="230px" /> Large scale JavaScript development involves many different file types and formats. Some of it is your production code, and some may be for unit testing, build scripts, third-party libs, etc.</p>
+											<p>Solution structure complexity may not stop there. Your production code needs a structure that makes your development extensible, flexible and modular. In addition, you will need tools for generating documentation, and JavaScript optimization, properly attached to the solution structure. Also your unit tests will need be properly located with access to the source files and related third-party libraries too.</p>
+											<!--
+											<div class="moreLink">
+												<a class="more" href="https://github.com/ectechno/nutcocojs/wiki/How-should-I-organize-my-solution-structure%3F" target="_blank">Read More</a>
+											</div>
+											-->
+										</li>
+									</ul>
+								</li>
+								<li class="header">
+									<a href="#" class="clickHeader"> <div class="emp">Dependency Management</div> How do I do modularize object oriented programming with plain JavaScript?</a>
+									<ul class="content">
+										<li>
+											<p><img class="floatRight" src="./images/content/dependency-management.png" width="400" /> Being a dynamic multi-paradigm language, JavaScript has its best use when its functional power is blended with some essence of object orientation.</p>
+											<p>Gone are the days we coded JS in a single massive script file. BoilerplateJS modularizes the code in logical parts that are compliant with the  asynchronous module definition API (AMD API) allowing unit encapsulation and dependency management.</p>
 
-                            BoilerplateJS helps you avoid getting vendor locked. Remember, it's just placing your own code in the right architecture
-                            for integrating your favourite libraries.
-                            <br/>
-                            <br />
-                            With BoilerplateJS we address many of the critical concerns in large-scale JavaScript development.
-                            Have a look below. If these are important concerns to you, then we are a matching community!
-                            <br/>
-                            <br />
-                        </div>
-                        <ul id="accordion" class="panel">
-                            <li class="itemSelectedHeader" >
-                                <a href="#" class="clickHeader"> <span class="emp">Solution Structure</span><span class="textSeperator">|</span> How should I organize my solution structure?</a>
-                                <ul class="content">
-                                    <li><img  class="floatLeft" src="./images/content/solution-structure.png" height="230px" />
-                                        Large scale JavaScript development involves many different file
-                                        types and formats. Some of it is your production code, and some may be for unit testing, build scripts,
-                                        third-party libs, etc.
-                                        <br/>
-                                        <br/>
+											In addition, BoilerplateJS code demonstrates best practices for familiar OO programming that allow creation of classes containing static, public and private spaces (you will find some unit tests demonstrating use of OO patterns under the 'tests' directory). By default Boilerplate uses <a href="http://requirejs.org"> requirejs </a> as the underlying AMD loader.
+											<!--
+											<div class="moreLink">
+												<a class="more" href="https://github.com/ectechno/nutcocojs/wiki/Can-I-do-modular-object-oriented-programming-with-plain-javascript%3F" target="_blank">Read More</a>
+											</div>
+											-->
+										</li>
+									</ul>
+								</li>
+								<li class="header">
+									<a href="#" class="clickHeader"> <div class="emp">Product Modules </div> My product suite has multiple product modules, how should I go about it?</a>
+									<ul class="content">
+										<li>
+											<p><img class="floatLeft" src="./images/content/product-suite.png" height="300px" /> Building software products is different from building a web-application or a website. Products are commonly a part of a larger product suite where each product module contains sub modules for its different functional areas. Likewise depending on the complexity, multiple levels of sub-modularization is not uncommon.</p>
+											<p>'Boiler.Context' is one of the most important classes in BoilerplateJS reference architecture. A 'Context' represents a self contained and controlled facade for all of the resource needs of a module. Each context is self contained and protected, but also has the ability to interact with other contexts in a controlled manner (e.g. through events).</p>
+											<p>Contexts can be nested in order to create a parent-child association, to form a context tree. This is a common topology for product suites where a global context becomes the parent context, and product modules have independent child contexts of their own. Associated contexts possess limited knowledge of each other, for inheriting configuration settings from the parent.</p>
+											<!--
+											<div class="moreLink">
+												<a class="more" href="https://github.com/ectechno/nutcocojs/wiki/My-product-suit-has-multiple-product-modules,-how-should-I-go-about-it%3F" target="_blank">Read More</a>
+											</div>
+											-->
+										</li>
+									</ul>
+								</li>
+								<li class="header">
+									<a href="#" class="clickHeader"> <div class="emp">UI Components </div> UI layer is going to be complex in my product. How should I design my components?</a>
+									<ul class="content">
+										<li>
+											<div>
+												<p><img class="floatRight" src="./images/content/ui-component.png" /> It might be just the UI that makes or break your product in the market. BoilerplateJS keeps the view layer open for developers to mix and match different UI libraries as required. By default it ships with knockoutJS and jQuery, that are sufficient for simple UI needs.</p>
+												<p>The important UI class in Boilerplate is 'Boiler.ViewTemplate'. This class assist you to deal with 'V' (out of MVx architecture) related aspects such as template attachment to DOM, CSS attachment to DOM, localization, etc. Vx layers of MVx architecture are open for developers to select among any MVC, MVVM, or MVP framework.</p>
+												<p>BoilerplateJS encourages you to make your UI components self contained as much as possible. Following is a typical structure of a BoilerplateJS UI component:</p>
+											</div>
+											<div>
+												<table class="gridtable">
+													<tr>
+														<th>assets (folder) </th>
+														<td>Contains any assets such as images, animations, etc that are a part of your UI components</td>
+													</tr>
+													<tr>
+														<th>nls (folder)</th>
+														<td>Localization resources for different locales that are needed by your UI components</td>
+													</tr>
+													<tr>
+														<th>style.css</th>
+														<td>Styles that are not a part of the overall theme, but specific to the UI components</td>
+													</tr>
+													<tr>
+														<th>view.html</th>
+														<td>HTML view template for your UI component. Boiler classes will help attach this to the DOM</td>
+													</tr>
+													<tr>
+														<th>viewmodel.js</th>
+														<td>This is the logic/code behind (MVVM here). It could also be a controller.js in the case of MVC</td>
+													</tr>
+													<tr>
+														<th>component.js</th>
+														<td>Encapsulation of all of the above. The outside world interacts with the component via this class.</td>
+													</tr>
+												</table>
+											</div>
+											<!--
+											<div class="moreLink">
+												<a class="more" href="https://github.com/ectechno/nutcocojs/wiki/UI-layer-is-going-to-be-complex-in-my-product.-How-should-I-design-my--UI-components%3F" target="_blank">Read More</a>
+											</div>
+											-->
+										</li>
+									</ul>
+								</li>
+								<li class="header">
+									<a href="#" class="clickHeader"><div class="emp">Event Driven Messaging </div> How should my loosely coupled components interact?</a>
+									<ul class="content">
+										<li>
+											<p><img  class="floatLeft" src="./images/content/event-mediation.png" height="180px"/>
+Architecture of BoilerplateJS encourages modules and UI components to be self contained and loosely coupled. But in complex applications, it is normal to have some components interacting with each other. BoilerplateJS recommends an event based pub-sub mechanism for such communication needs.</p>
 
-                                        Solution structure complexity may not stop there. Your production code needs a structure that
-                                        makes your development extensible, flexible and modular. In addition, you will need tools
-                                        for generating documentation, and JavaScript optimization, properly attached to the solution structure.
-                                        Also your unit tests will need be properly located with access to the source files and related
-                                        third-party libraries too.
-                                        <br/>
-                                        <br/>
-                                        <div class="moreLink">
-                                            <a class="more" href="https://github.com/ectechno/nutcocojs/wiki/How-should-I-organize-my-solution-structure%3F" target="_blank">Read More</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="header">
-                                <a href="#" class="clickHeader"> <span class="emp">Dependency Management</span><span class="textSeperator">|</span> How do I do modularize object oriented programming with plain JavaScript?</a>
-                                <ul class="content">
-                                    <li>
-                                        <img  class="floatRight" src="./images/content/dependency-management.png" width="400" />
-                                        Being a dynamic multi-paradigm language, JavaScript has its best use when its functional power is blended with some essence of object orientation.
-                                        <br/>
-                                        <br/>
-                                        Gone are the days we coded JS in a single massive script file. BoilerplateJS
-                                        modularizes the code in logical parts that are compliant with the
-                                        asynchronous module definition API (AMD API) allowing unit encapsulation and dependency management.
-                                        <br/>
-                                        <br/>
-                                        In addition, BoilerplateJS code demonstrates best practices for familiar OO programming that
-                                        allow creation of classes containing static, public and private spaces (you will find some
-                                        unit tests demonstrating use of OO patterns under the 'tests' directory). By default Boilerplate uses
-                                        <a href="http://requirejs.org"> requirejs </a> as the underlying AMD loader.
-                                        <br/>
-                                        <div class="moreLink">
-                                            <a class="more" href="https://github.com/ectechno/nutcocojs/wiki/Can-I-do-modular-object-oriented-programming-with-plain-javascript%3F" target="_blank">Read More</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="header">
-                                <a href="#" class="clickHeader"> <span class="emp">Product Modules </span><span class="textSeperator">|</span> My product suite has multiple product modules, how should I go about it?</a>
-                                <ul class="content">
-                                    <li>
-                                        <img  class="floatLeft" src="./images/content/product-suite.png" height="300px" />
-                                        Building software products is different from building a web-application or a website. Products
-                                        are commonly a part of a larger product suite where each product module contains
-                                        sub modules for its different functional areas. Likewise depending on the
-                                        complexity, multiple levels of sub-modularization is not uncommon.
-                                        <br/>
-                                        <br/>
-                                        'Boiler.Context' is one of the most important classes in BoilerplateJS reference architecture.
-                                        A 'Context' represents a self contained and controlled facade for all of the resource needs of
-                                        a module. Each context is self contained and protected, but also has the ability
-                                        to interact with other contexts in a controlled manner (e.g. through events).
-                                        <br/>
-                                        <br/>
-                                        Contexts can be nested in order to create a parent-child association, to form a context tree.
-                                        This is a common topology for product suites where a global context
-                                        becomes the parent context, and product modules have independent child contexts of their own.
-                                        Associated contexts possess limited knowledge of each other, for inheriting configuration settings
-                                        from the parent.
-                                        <div class="moreLink">
-                                            <a class="more" href="https://github.com/ectechno/nutcocojs/wiki/My-product-suit-has-multiple-product-modules,-how-should-I-go-about-it%3F" target="_blank">Read More</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="header">
-                                <a href="#" class="clickHeader"> <span class="emp">UI Components </span><span class="textSeperator">|</span> UI layer is going to be complex in my product. How should I design my components?</a>
-                                <ul class="content">
-                                    <li>
-                                        <div>
-                                            <img  class="floatRight" src="./images/content/ui-component.png" />
+											<p>'Boiler.Context' exposes a pair of mediating methods 'listen' &amp; 'notify' which enable components to interact.	All contexts in the same context hierachy share a single mediator. This means UI components in a particular context hierachy are able to communicate, even though they are not a part of the same context.</p>
+											<!--
+											<div class="moreLink">
+												<a class="more" href="https://github.com/ectechno/nutcocojs/wiki/How-should-my-loosely-coupled-modules-interact-with-each-other%3F" target="_blank">Read More</a>
+											</div>
+											-->
+										</li>
+									</ul>
+								</li>
+								<li class="header">
+									<a href="#" class="clickHeader"> <div class="emp">Controller Routing </div> I'm building a single page app. What about bookmarking and browser history?</a>
+									<ul class="content">
+										<li>
+											<p>
+												It is a common requirement to have your functionality be directly accessible via bookmarked URLs. But remember, it might not be trivial to support bookmarking, history, back/forward buttons later, unless this is planned for in the initial architecture.
+											</p>
+											<p><img  class="floatRight" src="./images/content/url-routing.png" width="420" /> BoilerplateJS’s module structure inherently supports bookmarking and browser history thanks to its UrlController class. Your components can register themselves to a URL controller by specifying the URL pattern, on which they want to be activated.</p>
+											<p>In addition to UrlController, BoilerplateJS also provides the option of activating components within specific DOM elements using the DomController. This is very relavant when you want your components to be embeddable in a third-party website or a portal, just as the Facebook-Like box is.
+											</p>
+											<!--
+											<div class="moreLink">
+												<a class="more" href="https://github.com/ectechno/nutcocojs/wiki/I'm-building-a-single-page-app.-What-about-bookmarking-and-browser--history%3F" target="_blank">Read More</a>
+											</div>
+											-->
+										</li>
+									</ul>
+								</li>
+								<li class="header">
+									<a href="#" class="clickHeader"> <div class="emp">Unit Testing </div> I'm writing durable product code. Can I unit test my JavaScript code?</a>
+									<ul class="content">
+										<li>
+											<p><img  class="floatRight" src="./images/content/unit-testing.png" height="170px" /> Test driven development encourages you to write less coupled, cohesive code that is easy to change. BoilerplateJS comes with ready-to-use, integrated Unit Testing facilities using QUnit.</p>
+											<p>We have taken the initiative and most of the core classes in the platform are fully covered with unit tests. Our test suite allows you to isolate modules, mock dependencies and integrate other unit testing best practices such as stubbing and assertions.</p>
+											<!--
+											<div class="moreLink">
+												<a class="more" href="https://github.com/ectechno/nutcocojs/wiki/I'm-writing-durable-product-code.-Can-I-UnitTest-my-javascript-code%3F" target="_blank">Read More</a>
+											</div>
+											-->
+										</li>
+									</ul>
+								</li>
+								<li class="header">
+									<a href="#" class="clickHeader"> <div class="emp">Localization </div> should I provide native language support for my users?</a>
+									<ul class="content">
+										<li>
+											<p><img  class="floatLeft" src="./images/content/localizations.png" width="250px" /> In JavaScript based single page applications, UI rendering happens completely in the browser. Therefore it makes very much sense that the localization of UI components should also happen in the browser. BoilerplateJS lets you define localization resources per UI component, enabling you to structure and manage resource files effectively.</p>
+											<!--
+											<div class="moreLink">
+												<a href="https://github.com/ectechno/nutcocojs/wiki/How-should-I-provide-native-language-support-for-my-users%3F" class="more" target="_blank">Read More</a>
+											</div>
+											-->
+										</li>
+									</ul>
+								</li>
+								<li class="header">
+									<a href="#" class="clickHeader"> <div class="emp">Document Generation </div> How can I maintain good documentation for my product?</a>
+									<ul class="content">
+										<li>
+											<p><img  class="floatLeft" src="./images/content/annotated-method.png" border="1" height="99px" /> Having documentation for your product adds maintainability, and makes debugging processes easier. But when the source is modified with the changing requirements, developers have to put extra effort into maintaining the documentation.</p>
 
-                                            It might be just the UI that makes or break your product in the market.
-                                            BoilerplateJS keeps the view layer open for developers to mix
-                                            and match different UI libraries as required. By default it ships with
-                                            knockoutJS and jQuery, that are sufficient for simple UI needs.
-                                            <br/>
-                                            <br/>
-                                            The important UI class in Boilerplate is 'Boiler.ViewTemplate'. This class assist
-                                            you to deal with 'V' (out of MVx architecture) related aspects such as
-                                            template attachment to DOM, CSS attachment to DOM, localization, etc. Vx
-                                            layers of MVx architecture are open for developers to select among any MVC,
-                                            MVVM, or MVP framework.
-                                            <br/>
-                                            <br/>
-                                            BoilerplateJS encourages you to make your UI components self contained as much as possible.
-                                            Following is a typical structure of a BoilerplateJS UI component:
-                                        </div>
-                                        <div>
+											<p>BoilerplateJS ships YUIDoc as a 3rd party tool for document generation using the comments in the source.</p>
 
-                                            <table class="gridtable">
-                                                <tr>
-                                                    <td>assets (folder) </td>
-                                                    <td>Contains any assets such as images, animations, etc that are a part of your UI components</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>nls (folder)</td>
-                                                    <td>Localization resources for different locales that are needed by your UI components</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>style.css</td>
-                                                    <td>Styles that are not a part of the overall theme, but specific to the UI components</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>view.html</td>
-                                                    <td>HTML view template for your UI component. Boiler classes will help attach this to the DOM</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>viewmodel.js</td>
-                                                    <td>This is the logic/code behind (MVVM here). It could also be a controller.js in the case of MVC</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>component.js</td>
-                                                    <td>Encapsulation of all of the above. The outside world interacts with the component via this class.</td>
-                                                </tr>
-                                            </table>
+											<p>All you have to do is to comment the source code using a few annotations. Then run the batch file document.bat (On linux run ‘document.sh’) under the documentation directory. This will generate the documentation as an HTML web page which is ready to publish.</p>
+											<!--
+											<div class="moreLink">
+												<a class="more" href="https://github.com/ectechno/nutcocojs/wiki/I'm-writing-durable-product-code.-Can-I-UnitTest-my-javascript-code%3F" target="_blank">Read More</a>
+											</div>
+											-->
+										</li>
+									</ul>
+								</li>
+								<li class="header">
+									<a href="#" class="clickHeader"> <div class="emp">Optimized Deployment </div> How can I optimize my code for deployment?</a>
+									<ul class="content">
+										<li>
+											<p><img  class="floatRight" src="./images/content/optimizer.png" style="height:150px"/> Using JavaScript can make your application dynamic and active however large numbers of files, and large file sizes being downloaded into the browser can lead to pages becoming unresponsive. To avoid this BoilerplateJS provides the RequireJS optimizer as a tool in the framework which will combine related scripts, and minify the JavaScript code to provide better performance.</p>
 
-                                        </div>
-                                        <div class="moreLink">
-                                            <a class="more" href="https://github.com/ectechno/nutcocojs/wiki/UI-layer-is-going-to-be-complex-in-my-product.-How-should-I-design-my--UI-components%3F" target="_blank">Read More</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="header">
-                                <a href="#" class="clickHeader"><span class="emp">Event Driven Messaging </span><span class="textSeperator">|</span> How should my loosely coupled components interact?</a>
-                                <ul class="content">
-                                    <li>
-                                        <img  class="floatLeft" src="./images/content/event-mediation.png" height="180px"/>
-                                        Architecture of BoilerplateJS encourages modules and UI components to be self contained
-                                        and loosely coupled. But in complex applications, it is normal to have some components interacting with each other.
-                                        BoilerplateJS recommends an event based pub-sub mechanism for such communication needs.
-
-                                        <br/>
-                                        <br/>
-                                        'Boiler.Context' exposes a pair of mediating methods 'listen' &amp; 'notify' which enable
-                                        components to interact.	All contexts in the same context hierachy share a single mediator. This means
-                                        UI components in a particular context hierachy are able to communicate, even though they are
-                                        not a part of the same context.
-                                        <div class="moreLink">
-                                            <a class="more" href="https://github.com/ectechno/nutcocojs/wiki/How-should-my-loosely-coupled-modules-interact-with-each-other%3F" target="_blank">Read More</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="header">
-                                <a href="#" class="clickHeader"> <span class="emp">Controller Routing </span><span class="textSeperator">|</span> I'm building a single page app. What about bookmarking and browser history?</a>
-                                <ul class="content">
-                                    <li>
-                                        <div>
-                                            It is a common requirement to have your functionality be directly accessible via bookmarked URLs.
-                                            But remember, it might not be trivial to support bookmarking, history, back/forward buttons
-                                            later, unless this is planned for in the initial architecture.
-                                        </div>
-                                        <br/>
-                                        <div><img  class="floatRight" src="./images/content/url-routing.png" width="420" /> BoilerplateJS’s module structure inherently supports bookmarking and browser history
-                                            thanks to its UrlController class. Your components can register themselves to a URL
-                                            controller by specifying the URL pattern, on which they want to be activated.
-                                            <br/>
-                                            <br/>
-                                            In addition to UrlController, BoilerplateJS also provides the option of activating
-                                            components within specific DOM elements using the DomController. This is very
-                                            relavant when you want your components to be embeddable in a third-party website
-                                            or a portal, just as the Facebook-Like box is.
-                                        </div>
-                                        <div class="moreLink">
-                                            <a class="more" href="https://github.com/ectechno/nutcocojs/wiki/I'm-building-a-single-page-app.-What-about-bookmarking-and-browser--history%3F" target="_blank">Read More</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="header">
-                                <a href="#" class="clickHeader"> <span class="emp">Unit Testing </span><span class="textSeperator">|</span> I'm writing durable product code. Can I unit test my JavaScript code?</a>
-                                <ul class="content">
-                                    <li>
-                                        <img  class="floatRight" src="./images/content/unit-testing.png" height="170px" /> Test driven development encourages you to write less coupled, cohesive code that
-                                        is easy to change. BoilerplateJS comes with ready-to-use, integrated Unit Testing facilities
-                                        using QUnit.
-                                        <br/>
-                                        <br/>
-                                        We have taken the initiative and most of the core classes in the platform are
-                                        fully covered with unit tests. Our test suite allows you to isolate modules, mock dependencies
-                                        and integrate other unit testing best practices such as stubbing and assertions.
-                                        <div class="moreLink">
-                                            <a class="more" href="https://github.com/ectechno/nutcocojs/wiki/I'm-writing-durable-product-code.-Can-I-UnitTest-my-javascript-code%3F" target="_blank">Read More</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="header">
-                                <a href="#" class="clickHeader"> <span class="emp">Localization </span><span class="textSeperator">|</span> should I provide native language support for my users?</a>
-                                <ul class="content">
-                                    <li>
-                                        <img  class="floatLeft" src="./images/content/localizations.png" width="250px" /> In JavaScript based single page applications, UI rendering happens completely in the browser.
-                                        Therefore it makes very much sense that the localization of UI components should also happen in the
-                                        browser. BoilerplateJS lets you define localization resources per UI component, enabling you to
-                                        structure and manage resource files effectively.
-                                        <div class="moreLink">
-                                            <a href="https://github.com/ectechno/nutcocojs/wiki/How-should-I-provide-native-language-support-for-my-users%3F" class="more" target="_blank">Read More</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="header">
-                                <a href="#" class="clickHeader"> <span class="emp">Document Generation </span><span class="textSeperator">|</span> How can I maintain good documentation for my product?</a>
-                                <ul class="content">
-                                    <li>
-                                        <img  class="floatLeft" src="./images/content/annotated-method.png" border="1" height="99px" /> Having documentation for your product adds maintainability, and makes debugging processes easier. But when the source is modified with the changing requirements, developers have to put extra effort into maintaining the documentation
-                                        <br/>
-                                        <br/>
-                                        BoilerplateJS ships YUIDoc as a 3rd party tool for document generation using the comments in the source
-                                        <br/>
-                                        <br/>
-                                        All you have to do is to comment the source code using a few annotations. Then run the batch file document.bat (On linux run ‘document.sh’) under the documentation directory. This will generate the documentation as an HTML web page which is ready to publish.
-                                        <div class="moreLink">
-                                            <a class="more" href="https://github.com/ectechno/nutcocojs/wiki/I'm-writing-durable-product-code.-Can-I-UnitTest-my-javascript-code%3F" target="_blank">Read More</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="header">
-                                <a href="#" class="clickHeader"> <span class="emp">Optimized Deployment </span><span class="textSeperator">|</span> How can I optimize my code for deployment?</a>
-                                <ul class="content">
-                                    <li>
-                                        <img  class="floatRight" src="./images/content/optimizer.png" style="height:150px"/> Using JavaScript can make your application dynamic and active however large numbers
-                                        of files, and large file sizes being downloaded into the browser can lead to pages
-                                        becoming unresponsive. To avoid this BoilerplateJS provides
-                                        the RequireJS optimizer as a tool in the framework which will combine related
-                                        scripts, and minify the JavaScript code to provide better performance.
-                                        <br/>
-                                        <br/>
-                                        After optimization only a single file will be loaded as the application, and all
-                                        the files will be compressed. Your optimized code will look like this:
-                                        <br/>
-                                        <div class="moreLink">
-                                            <a class="more" href="https://github.com/ectechno/nutcocojs/wiki/How-should-my-loosely-coupled-modules-interact-with-each-other%3F" target="_blank">Read More</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <br />
-                        <br />
-                        <br />
-                        <div class="largeTitle">
-                            This looks great... but what about knockoutjs and backbonejs?
-                        </div>
-                        <div class="meduimText ">
-                            BoilerplateJS does <span class="redColorText" >NOT reinvent your wheels</span>!!!
-                            <br />
-                            <br />
-                            We are NOT attempting to replace
-                            any of the established libraries that you already use and love. What BoilerplateJS provides is
-                            a reference architecture that demonstrates the best practices for integrating your libraries for large scale
-                            product development.
-                            <br />
-                            <br />
-                            Of course, we ship a few libraries by default (for example
-                            <a href='http://knockoutjs.com'>knockoutjs</a>, <a href='http://requirejs.org'>requirejs</a>
-                            <a href='http://millermedeiros.github.com/crossroads.js/'>crossroadsjs</a> &amp; <a href='http://docs.jquery.com/QUnit'>qunit</a>)
-                            but if you do not like any of those <span class="redColorText" >you can replace them with your favourite library</span>. As proof, due to  popular demand,
-                            we have incorporated (from v0.2rc) <a href="http://boilerplatejs.org/samples/productsuite/index.html#todo" target="_blank"> an exmaple of backbonejs </a>
-                            side-by-side with knockoutjs for creating UI components.
-                            <br />
-                            <br />
-                            But on the otherhand, be mindful that an MVC or MVVM library alone does not define sufficient architecture for large scale
-                            JavaScript development. That's exactly what we address with BoilerplateJS.
-
-                            <br />
-                            <br />
-                            <br />
-                        </div>
-                        <div class="largeTitle">
-                            Where is the community?
-                        </div>
-                        <div class="meduimText ">
-                            The BoilerplateJS community is highly active on <span class="redColorText" ><a href='http://stackoverflow.com/'>stackoverflow</a></span> .
-                            We encourage you to <a href='http://stackoverflow.com/questions/ask'> ask</a> your questions there
-                            with the relavant tags (e.g. boilerplatejs, javascript). If you use the tag 'boilerplatejs', generally
-                            questions are answered within a few hours.
-                            <br />
-                            <br />
-                            Incase you need direct contact with the BoilerplateJS team (e.g. for reporting
-                            an issue), you may use the github <a href='https://github.com/ectechno/boilerplatejs/issues'> issues</a> page.
-                            <br />
-                            <br />
-                            We really like to hear from you regarding your BoilerplateJS experiences. Feel free to use #boilerplatejs on Twitter.
-                            If you plan to join BoilerplateJS as a contributer please contact us through github.
-                            <br />
-                            <br />
-                            <br />
-                        </div>
-                        <div class="largeTitle">
-                            Frequently asked questions
-                                                    <div class="meduimText ">
-                            <ul>
-                                <li class="header">
-                                    <a target="_blank" href="http://stackoverflow.com/questions/12545476/boilerplatejs-recommended-way-to-handle-authorization-and-authentication" class="clickHeader"> How to handle authorization and authentication?</a>
-                                </li>
-                                <li class="header">
-                                    <a target="_blank" href="http://stackoverflow.com/questions/12726412/how-to-pass-data-between-view-to-another-viewmodel" class="clickHeader">How to pass data between viewmodels? </a>
-                                </li>
-                                <li class="header">
-                                    <a target="_blank" href="http://blog.hasith.net/2012/11/how-much-multi-page-single-page.html" class="clickHeader"> Should I be fully singlepaged in my application? </a>
-                                </li>
-                                <li class="header">
-                                    <a target="_blank" href="http://stackoverflow.com/questions/12517137/development-process-using-boilerplatejs" class="clickHeader"> Development process involving web designers and JS developers? </a>
-                                </li>
-                                <li class="header">
-                                    <a target="_blank" href="http://stackoverflow.com/questions/12455785/adding-external-css-file-to-a-boilerplatejs-project" class="clickHeader">Adding external CSS file to a BoilerplateJS project? </a>
-                                </li>
-                                <li class="header">
-                                    <a target="_blank" href="http://stackoverflow.com/questions/12396915/is-there-any-way-to-inter-communicate-with-modules-in-boilerplatejs" class="clickHeader">Event based intercommunication between modules? </a>
-                                </li>
-                                <li class="header">
-                                    <a target="_blank" href="http://stackoverflow.com/questions/12366823/in-boilerplatejs-browser-is-loading-all-the-scripts-in-other-modules-regardles" class="clickHeader"> Can I lazyload scripts based on the module user works with? </a>
-                                </li>
-                                <li class="header">
-                                    <a target="_blank" href="http://stackoverflow.com/questions/13127153/sharing-datasources-between-components-on-a-boilerplatejs-app" class="clickHeader"> Sharing data between components without reloading from server? </a>
-                                </li>                                                                                                                                                                
-                            </ul>
-                        </div>
-                        </div>
-
-                        <br />
-                        <br />
-
-                    </div>
-                </div>
-                <div class="yui3-u-7-24">
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <div class="watchVideosButton"></div>
-                    <div class="rightPanel" >
-                        <div class="roundedBox">
-                            <a href="http://www.youtube.com/watch?v=x5hwIpxR3j8" target="_blank"><img src="images/video-hello-world.jpg" width="235" height="170"/></a><span class="redTtile">Boiling a HelloWorld</span>&nbsp;[10 mins video]
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <a href="http://www.youtube.com/watch?v=HOQ2_Vul0yY" target="_blank"><img src="images/video-ui-components.png" width="235" height="170"/></a><span class="redTtile">Component Best Practices</span>&nbsp;[12 mins video]
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            <a href="http://www.youtube.com/watch?v=EcRAseDjdnM" target="_blank"><img src="images/video-solution-structuring.png" width="235" height="170"/></a><span class="redTtile">Structuring your Solution</span>&nbsp;[4 mins video]
-                            <br />
-                            <br />
-                            <a href="#" class="more" style="display:none">All BoilerplateJS Videos</a>
-                        </div>
-                        <br />
-                        <br />
-                        <div class="roundedBoxTwitter">
-                            <a class="twitter-timeline" href="https://twitter.com/boilerplatejs" data-widget-id="246589281454407681">Tweets by @boilerplatejs</a>
-                            <script>
-								! function(d, s, id) {
-									var js, fjs = d.getElementsByTagName(s)[0];
-									if (!d.getElementById(id)) {
-										js = d.createElement(s);
-										js.id = id;
-										js.src = "//platform.twitter.com/widgets.js";
-										fjs.parentNode.insertBefore(js, fjs);
-									}
-								}(document, "script", "twitter-wjs");
-                            </script>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer" >
-            <div class="yui3-g" style="display:none">
-                <div class="yui3-u-1-3"><img src="images/footerImg1.jpg">
-                </div>
-                <div class="yui3-u-1-3"><img src="images/footerImg2.jpg" class="footerRightImage">
-                </div>
-                <div class="yui3-u-1-3"><img src="images/footerImg3.jpg" class="footerRightImage">
-                </div>
-            </div>
-            <div class="footerText">
-                Released under the MIT license.
-            </div>
-        </div>
-    </body>
+											<p>After optimization only a single file will be loaded as the application, and all the files will be compressed. Your optimized code will look like this:</p>
+											<!--
+											<div class="moreLink">
+												<a class="more" href="https://github.com/ectechno/nutcocojs/wiki/How-should-my-loosely-coupled-modules-interact-with-each-other%3F" target="_blank">Read More</a>
+											</div>
+											-->
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h2>
+								This looks great... but what about knockoutjs and backbonejs?
+							</h2>
+							<p>
+								BoilerplateJS does <span class="highlight" >NOT reinvent your wheels</span>!!!
+							</p>
+							<p>
+								We are NOT attempting to replace any of the established libraries that you already use and love. What BoilerplateJS provides is a reference architecture that demonstrates the best practices for integrating your libraries for large scale product development.
+							</p>
+							<p>
+								Of course, we ship a few libraries by default (for example <a href='http://knockoutjs.com'>knockoutjs</a>, <a href='http://requirejs.org'>requirejs</a> <a href='http://millermedeiros.github.com/crossroads.js/'>crossroadsjs</a> &amp; <a href='http://docs.jquery.com/QUnit'>qunit</a>) but if you do not like any of those <span class="highlight" >you can replace them with your favourite library</span>. As proof, due to  popular demand, we have incorporated (from v0.2rc) <a href="http://boilerplatejs.org/samples/productsuite/index.html#todo" target="_blank"> an exmaple of backbonejs </a> side-by-side with knockoutjs for creating UI components.
+							</p>
+							<p>
+								But on the otherhand, be mindful that an MVC or MVVM library alone does not define sufficient architecture for large scale JavaScript development. That's exactly what we address with BoilerplateJS.
+							</p>
+							<h2>
+								Where is the community?
+							</h2>
+							<p>
+								The BoilerplateJS community is highly active on <a href='http://stackoverflow.com/'>Stack Overflow</a>. We encourage you to <a href='http://stackoverflow.com/questions/ask'> ask</a> your questions there with the relavant tags (e.g. boilerplatejs, javascript). If you use the tag 'boilerplatejs', generally questions are answered within a few hours.
+							</p>
+							<p>
+								Incase you need direct contact with the BoilerplateJS team (e.g. for reporting an issue), you may use the github <a href='https://github.com/ectechno/boilerplatejs/issues'> issues</a> page.
+							</p>
+							<p>
+								We really like to hear from you regarding your BoilerplateJS experiences. Feel free to use #boilerplatejs on Twitter. If you plan to join BoilerplateJS as a contributer please contact us through github.
+							</p>
+							<h2>
+								Frequently asked questions
+							</h2>
+							<ul>
+								<li class="header">
+									<a target="_blank" href="http://stackoverflow.com/questions/12545476/boilerplatejs-recommended-way-to-handle-authorization-and-authentication" class="clickHeader"> How to handle authorization and authentication?</a>
+								</li>
+								<li class="header">
+									<a target="_blank" href="http://stackoverflow.com/questions/12726412/how-to-pass-data-between-view-to-another-viewmodel" class="clickHeader">How to pass data between viewmodels? </a>
+								</li>
+								<li class="header">
+									<a target="_blank" href="http://blog.hasith.net/2012/11/how-much-multi-page-single-page.html" class="clickHeader"> Should I be fully singlepaged in my application? </a>
+								</li>
+								<li class="header">
+									<a target="_blank" href="http://stackoverflow.com/questions/12517137/development-process-using-boilerplatejs" class="clickHeader"> Development process involving web designers and JS developers? </a>
+								</li>
+								<li class="header">
+									<a target="_blank" href="http://stackoverflow.com/questions/12455785/adding-external-css-file-to-a-boilerplatejs-project" class="clickHeader">Adding external CSS file to a BoilerplateJS project? </a>
+								</li>
+								<li class="header">
+									<a target="_blank" href="http://stackoverflow.com/questions/12396915/is-there-any-way-to-inter-communicate-with-modules-in-boilerplatejs" class="clickHeader">Event based intercommunication between modules? </a>
+								</li>
+								<li class="header">
+									<a target="_blank" href="http://stackoverflow.com/questions/12366823/in-boilerplatejs-browser-is-loading-all-the-scripts-in-other-modules-regardles" class="clickHeader"> Can I lazyload scripts based on the module user works with? </a>
+								</li>
+								<li class="header">
+									<a target="_blank" href="http://stackoverflow.com/questions/13127153/sharing-datasources-between-components-on-a-boilerplatejs-app" class="clickHeader"> Sharing data between components without reloading from server? </a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="yui3-u-1-3">
+						<div class="watchVideosButton yui3-visible-desktop"></div>
+						<div class="rightPanel" >
+							<div class="roundedBox">
+								<div class="video-wrapper">
+									<a href="http://www.youtube.com/watch?v=x5hwIpxR3j8" target="_blank"><img src="images/video-hello-world.jpg" width="235" height="170"/><br></a><span class="redTitle">Boiling a HelloWorld</span>&nbsp;[10 mins]
+								</div>
+								<div class="video-wrapper">
+									<a href="http://www.youtube.com/watch?v=HOQ2_Vul0yY" target="_blank"><img src="images/video-ui-components.png" width="235" height="170"/><br></a><span class="redTitle">Component Best Practices</span>&nbsp;[12 mins]
+								</div>
+								<div class="video-wrapper">
+									<a href="http://www.youtube.com/watch?v=EcRAseDjdnM" target="_blank"><img src="images/video-solution-structuring.png" width="235" height="170"/><br></a><span class="redTitle">Structuring your Solution</span>&nbsp;[4 mins]
+								</div>
+							</div>
+							<div class="roundedBoxTwitter">
+								<a class="twitter-timeline" href="https://twitter.com/boilerplatejs" data-widget-id="246589281454407681">Tweets by @boilerplatejs</a>
+								<script>
+									! function(d, s, id) {
+										var js, fjs = d.getElementsByTagName(s)[0];
+										if (!d.getElementById(id)) {
+											js = d.createElement(s);
+											js.id = id;
+											js.src = "//platform.twitter.com/widgets.js";
+											fjs.parentNode.insertBefore(js, fjs);
+										}
+									}(document, "script", "twitter-wjs");
+								</script>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer>Released under the MIT license.</footer>
+		</div>
+	</body>
 </html>
